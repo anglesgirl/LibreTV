@@ -2,7 +2,7 @@
 const PROXY_URL = '/proxy/';    // 适用于 Cloudflare, Netlify (带重写), Vercel (带重写)
 // const HOPLAYER_URL = 'https://hoplayer.com/index.html';
 const SEARCH_HISTORY_KEY = 'videoSearchHistory';
-const MAX_HISTORY_ITEMS = 5;
+const MAX_HISTORY_ITEMS = 15;
 
 // 密码保护配置
 const PASSWORD_CONFIG = {
@@ -12,8 +12,8 @@ const PASSWORD_CONFIG = {
 
 // 网站信息配置
 const SITE_CONFIG = {
-    name: 'LibreTV',
-    url: 'https://libretv.is-an.org',
+    name: '小雅影视厅',
+    url: 'https://xy1991.win',
     description: '免费在线视频搜索与观看平台',
     logo: './image/retrotv_5520.png',
     version: '1.0.3'
@@ -105,11 +105,11 @@ const API_SITES = {
         api: 'https://ikunzyapi.com',
         name: 'iKun资源'
     },
-    testSource: {
-        api: 'https://www.example.com',
-        name: '空内容测试源',
-        adult: true
-    },
+   // testSource: {
+     //   api: 'https://www.example.com',
+     //   name: '空内容测试源',
+     //   adult: true
+   // },
     // 下面是一些成人内容的API源，默认隐藏，使用本项目浏览黄色内容违背项目初衷
     // 互联网上传播的色情内容将人彻底客体化、工具化，是性别解放和人类平等道路上的巨大障碍。
     // 这些黄色影片是资本主义父权制压迫的最恶毒体现，它将暴力和屈辱商品化，践踏人的尊严，对受害者造成无法弥愈的伤害，并毒害社会关系。
@@ -118,47 +118,47 @@ const API_SITES = {
     // 这些影片和背后的产业已经使数百万男女“下海”，出卖自己的身体，甚至以此为生计。
     // 而作为观众无辜吗？毫无疑问，他们促成了黄色产业链的再生产。
     // 我们提供此警告，是希望您能认清这些内容的本质——它们是压迫和奴役的工具，而非娱乐。
-    // ckzy: {
-    //     api: 'https://www.ckzy1.com',
-    //     name: 'CK资源',
-    //     adult: true
-    // },
-    // jkun: {
-    //     api: 'https://jkunzyapi.com',
-    //     name: 'jkun资源',
-    //     adult: true
-    // },
-    // bwzy: {
-    //     api: 'https://api.bwzym3u8.com',
-    //     name: '百万资源',
-    //     adult: true
-    // },
-    // souav: {
-    //     api: 'https://api.souavzy.vip',
-    //     name: 'souav资源',
-    //     adult: true
-    // },
-    // r155: {
-    //     api: 'https://155api.com',
-    //     name: '155资源',
-    //     adult: true
-    // },
-    // lsb: {
-    //     api: 'https://apilsbzy1.com',
-    //     name: 'lsb资源',
-    //     adult: true
-    // },
-    // huangcang: {
-    //     api: 'https://hsckzy.vip',
-    //     name: '黄色仓库',
-    //     adult: true,
-    //     detail: 'https://hsckzy.vip'
-    // },
-    // yutu: {
-    //     api: 'https://yutuzy10.com',
-    //     name: '玉兔资源',
-    //     adult: true
-    // },
+     ckzy: {
+         api: 'https://www.ckzy1.com',
+         name: 'CK资源',
+         adult: true
+     },
+     jkun: {
+         api: 'https://jkunzyapi.com',
+         name: 'jkun资源',
+         adult: true
+     },
+     bwzy: {
+         api: 'https://api.bwzym3u8.com',
+         name: '百万资源',
+         adult: true
+     },
+     souav: {
+         api: 'https://api.souavzy.vip',
+         name: 'souav资源',
+         adult: true
+     },
+     r155: {
+         api: 'https://155api.com',
+         name: '155资源',
+         adult: true
+     },
+     lsb: {
+         api: 'https://apilsbzy1.com',
+         name: 'lsb资源',
+         adult: true
+     },
+     huangcang: {
+         api: 'https://hsckzy.vip',
+         name: '黄色仓库',
+         adult: true,
+         detail: 'https://hsckzy.vip'
+     },
+     yutu: {
+         api: 'https://yutuzy10.com',
+         name: '玉兔资源',
+         adult: true
+     },
 };
 
 // 添加聚合搜索的配置选项
